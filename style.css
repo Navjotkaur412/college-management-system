@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #F8F8F9;
+    --secondary-color:#FFFFFF;
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#F8F8F9 0%,#F8F8F9 70%, #EE0100 70%,#EE0100 100%);
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 112px;
+    width: 211px;
+    margin-top: 101px;
+    margin-right: 9px;
+}
+
+.container{
+    /* background-color: var(--primary-color); */
+    display: grid;
+    grid-template-columns: repeat(4,303px);
+    grid-template-rows: repeat(1, 350px);
+    gap: 2rem;
+    margin-left: 106px;
+    margin-top: 48px;
+}
+.box{
+    border-radius: 11px;
+    height: 346px;
+    width: 303px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 2px;
+    background-color: var(--secondary-color);
+}
+
+.icon img {
+    width: auto;
+    height: 60px;
+    margin: 10px;
+}
+.heading {
+    margin-left: 10px;
+    padding-top: 5px;
+    /* font-weight: bold; */
+    font-size: 18px;
+    font-family: "Roboto", serif;
+}
+
+.para {
+    margin: 10px;
+    font-size: 16px;
+    padding: 11px 8px 0px 0px;
+    text-align: start;
+    color: gray;
+    padding: 8px 5px 5px 0px;
+    line-height: 19.6px;
+    font-family: "Roboto", serif;
+}
+.btn {
+    height: 32px;
+    width: 102px;
+    background-color: #ef0000;
+    margin-top: 31px;
+    border-radius: 18px;
+    padding: 8px 5px 3px 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+        justify-content: center;
+    
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn1{
+
+}
+.btn2{
+margin-top: 12px;
+}
+.btn3{
+
+}
+.btn4{
+
+}
+
+@media (min-width:741px) and (max-width:921px) {
+    .container{
+        grid-template-columns: repeat(2,406px);
+    grid-template-rows: repeat(2, 350px);
+    }
+}
+@media (min-width:390px) and (max-width:741px) {
+    .container{
+        grid-template-columns: repeat(1,406px);
+    grid-template-rows: repeat(4, 350px);
+    }
+}
